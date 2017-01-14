@@ -1,0 +1,4 @@
+default {query}
+default to {query}
+default for {query}
+default about {query}

@@ -1,0 +1,46 @@
+kodiPause pause
+kodiPlay play
+kodiStop stop
+kodiSelect select
+
+kodiBack back
+kodiBack go back
+kodiBack move back
+
+kodiUp up
+kodiUp go up
+kodiUp move up
+
+kodiDown down
+kodiDown go down
+kodiDown move down
+
+kodiLeft left
+kodiLeft go left
+kodiLeft move left
+
+kodiRight right
+kodiRight go right
+kodiRight move right
+
+kodiHome home
+kodiHome go home
+
+kodiMenu menu
+kodiMenu view menu
+kodiMenu show menu
+
+kodiReboot reboot
+kodiShutdown shutdown
+
+kodiVolumeUp volume up
+kodiVolumeUp turn it up
+kodiVolumeUp volume up by {delta}
+kodiVolumeUp turn it up by {delta}
+
+kodiVolumeDown volume down
+kodiVolumeDown turn it down
+kodiVolumeDown volume down by {delta}
+kodiVolumeDown turn it down by {delta}
+
+kodiSetVolume set volume to {volume}

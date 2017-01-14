@@ -1,0 +1,40 @@
+printerConnect connect
+
+printerStatus its status
+
+printerHome go home
+
+printerStop stop
+
+printerBedOn preheat bed
+printerBedOn preheat the bed
+printerBedOn turn on bed
+printerBedOn turn on the bed
+printerBedOn turn bed on
+printerBedOn turn the bed on
+printerBedOn preheat bed to {bedTemp}
+printerBedOn set bed temp to {bedTemp}
+
+printerBedOff turn bed off
+printerBedOff turn the bed off
+printerBedOff turn off bed
+printerBedOff turn off the bed
+
+
+printerExtruderOn preheat extruder
+printerExtruderOn preheat the extruder
+printerExtruderOn turn on extruder
+printerExtruderOn turn on the extruder
+printerExtruderOn turn extruder on
+printerExtruderOn turn the extruder on
+printerExtruderOn preheat extruder to {extruderTemp}
+printerExtruderOn set extruder temp to {extruderTemp}
+
+printerExtruderOff turn extruder off
+printerExtruderOff turn the extruder off
+printerExtruderOff turn off extruder
+printerExtruderOff turn off the extruder
+
+printerPreheat preheat for {filamentType}
+
+printerShutdown shutdown

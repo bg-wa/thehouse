@@ -1,0 +1,13 @@
+{
+"intents": [
+  {
+    "intent": "Default",
+    "slots": [
+      {
+        "name": "Query",
+        "type": "AMAZON.LITERAL"
+      }
+    ]
+  }
+]
+}

@@ -1,0 +1,70 @@
+{
+  "intents": [
+    {
+      "intent": "kodiPause"
+    },
+    {
+      "intent": "kodiPlay"
+    },
+    {
+      "intent": "kodiStop"
+    },
+    {
+      "intent": "kodiSelect"
+    },
+    {
+      "intent": "kodiBack"
+    },
+    {
+      "intent": "kodiUp"
+    },
+    {
+      "intent": "kodiDown"
+    },
+    {
+      "intent": "kodiLeft"
+    },
+    {
+      "intent": "kodiRight"
+    },
+    {
+       "intent": "kodiHome"
+     },
+     {
+       "intent": "kodiMenu"
+     },
+     {
+       "intent": "kodiReboot"
+     },
+     {
+       "intent": "kodiShutdown"
+     },
+    {
+      "intent": "kodiVolumeUp",
+      "slots": [
+        {
+          "name": "delta",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "kodiVolumeDown",
+      "slots": [
+        {
+          "name": "delta",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+         {
+           "intent": "kodiSetVolume",
+           "slots": [
+             {
+               "name": "volume",
+               "type": "AMAZON.NUMBER"
+             }
+           ]
+         }
+  ]
+}

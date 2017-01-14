@@ -1,0 +1,52 @@
+{
+  "intents": [
+    {
+      "intent": "printerConnect"
+    },
+    {
+      "intent": "printerStatus"
+    },
+    {
+      "intent": "printerHome"
+    },
+    {
+      "intent": "printerStop"
+    },
+    {
+      "intent": "printerShutdown"
+    },
+    {
+      "intent": "printerBedOn",
+      "slots": [
+        {
+          "name": "bedTemp",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+    {
+      "intent": "printerBedOff"
+    },
+    {
+      "intent": "printerExtruderOn",
+      "slots": [
+        {
+          "name": "extruderTemp",
+          "type": "AMAZON.NUMBER"
+        }
+      ]
+    },
+        {
+      "intent": "printerExtruderOff"
+    },
+    {
+      "intent": "printerPreheat",
+      "slots": [
+        {
+          "name": "filamentType",
+          "type": "FILAMENT_TYPE"
+        }
+      ]
+    }
+  ]
+}
