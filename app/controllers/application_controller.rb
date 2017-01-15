@@ -4,7 +4,7 @@ class ApplicationController < ActionController::Base
   include RepetierhostHelper
   include KodiHelper
   include PageReaderHelper
-  include GoogleHelper
+  # include GoogleHelper
 
   def intent_handler
     if params['session'] && params['request']
