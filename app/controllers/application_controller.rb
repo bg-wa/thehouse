@@ -1,7 +1,7 @@
 class ApplicationController < ActionController::Base
   respond_to? :json
 
-  include RepetierhostHelper
+  include RepetierserverHelper
   include KodiHelper
   include PageReaderHelper
   # include GoogleHelper
@@ -16,8 +16,8 @@ class ApplicationController < ActionController::Base
           case skill_id
             when ENV['ALEXA_SKILL_ID_1'] #KODI
               @response.add_speech kodi_launch_handler
-            when ENV['ALEXA_SKILL_ID_2'] #Repetier_Host
-              @response.add_speech repetierhost_launch_handler
+            when ENV['ALEXA_SKILL_ID_2'] #Repetier_Server
+              @response.add_speech repetierserver_launch_handler
             when ENV['ALEXA_SKILL_ID_3'] #Page_Reader
               page_reader_launch_handler
           end
@@ -26,8 +26,8 @@ class ApplicationController < ActionController::Base
           case skill_id
             when ENV['ALEXA_SKILL_ID_1'] #KODI
               @response.add_speech kodi_intent_handler(intent_name)
-            when ENV['ALEXA_SKILL_ID_2'] #Repetier_Host
-              @response.add_speech repetierhost_intent_handler(intent_name)
+            when ENV['ALEXA_SKILL_ID_2'] #Repetier_Server
+              @response.add_speech repetierserver_intent_handler(intent_name)
             when ENV['ALEXA_SKILL_ID_3'] #Page_Reader
               @response.add_speech page_reader_intent_handler(intent_name)
           end

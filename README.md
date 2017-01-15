@@ -1,7 +1,7 @@
 # TheHouse - Amazon Echo Companion Server
 
 This application allows you to build actions and responses to an Amazon Echo (Alexa) on a raspberry pi, orother in-house
-server.  It currently works with RepetierHost, KODI, and as a general Screen Reader.  The Project is ALPHA and some
+server.  It currently works with RepetierServer, KODI, and as a general Screen Reader.  The Project is ALPHA and some
 features work better than others.
 
 **Setup:**
@@ -17,7 +17,7 @@ git clone https://github.com/bg-wa/thehouse.git
      Helper libraries are found at (and can be added to): `app/helpers/`**
 
 ```
-  include RepetierhostHelper
+  include RepetierserverHelper
   include KodiHelper
   include PageReaderHelper
 ```

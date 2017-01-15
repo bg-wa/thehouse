@@ -1,10 +1,10 @@
-module RepetierhostHelper
+module RepetierserverHelper
   PRINTER_API_KEY = ENV['REPETIER_HOST_API_KEY']
 
   private
   @slug
 
-  def repetierhost_intent_handler(intent_name)
+  def repetierserver_intent_handler(intent_name)
     alexa_response_text = ''
     printers = JSON.parse printer_action('list', '', '', {}, PRINTER_API_KEY)
     if printers.nil?
