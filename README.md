@@ -1,10 +1,11 @@
 # TheHouse - Amazon Echo Companion Server
 
-This application allows you to build actions and responses to an Amazon Echo (Alexa) on a raspberry pi, orother in-house
-server.  It currently works with RepetierServer, KODI, and as a general Screen Reader.  The Project is ALPHA and some
-features work better than others.
+An Amazon Echo (Alexa) Companion Server for the RaspberryPi, or other in-house hardware. It currently works with
+RepetierServer, KODI, and as a general screen reader.
 
-**Setup:**
+===============================
+
+##Setup:
 
 **1. Get the latest version:**
 
@@ -73,6 +74,33 @@ rails s
 
 **6. Routing.**
 
-Make sure your network properly routes HTTPS traffic to your pi/server by using the **Test** tab onthe left side of your
-skill configuration.
+Make sure your network properly routes HTTPS traffic to your pi/server by using the **Test** tab on the left side of
+your skill configuration.
 
+##Data Workflow
+**Human** => Alexa => Amazon Developer Portal Skill => your-domain[:443] => `application_controller.rb`
+
+```
+_APP LOGIC_
+filter request by TYPE ('LaunchRequest', 'IntentRequest') then
+filter request by SKILL APPLICATION ID then
+pass request to HELPER
+
+filter by INTENT*
+Preform ACTION (API REQUSET HERE)*
+get RESPONSE
+assign alexa_response_text as STRING
+
+*('intentRequest' TYPE only)
+```
+
+Application response => Alexa => **Human**
+
+##Notes
+
+* I've mainly used this with my 3D printer, so the KODI and screen reader are less tested and unfinished.
+
+**Contributions:**
+
+The basic premise of this application is pretty simple and the current workflow is pretty scalable, so feel free to add
+helper libraries, report/fix bugs, or add documentation where you think concepts are unclear.
